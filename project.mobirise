@@ -1,0 +1,313 @@
+{
+  "settings": {
+    "name": "Terapi Gratis",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise4",
+      "title": "Mobirise 4",
+      "styling": {
+        "primaryColor": "#149dcc",
+        "secondaryColor": "#ff3366",
+        "successColor": "#F7ED4A",
+        "infoColor": "#82786E",
+        "warningColor": "#879A9F",
+        "dangerColor": "#B1A374",
+        "mainFont": "Rubik",
+        "display1Font": "Rubik",
+        "display1Size": 4.25,
+        "display2Font": "Rubik",
+        "display2Size": 3,
+        "display5Font": "Rubik",
+        "display5Size": 1.5,
+        "display7Font": "Rubik",
+        "display7Size": 1,
+        "display4Font": "Rubik",
+        "display4Size": 1,
+        "isRoundedButtons": true,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "4.11.6",
+    "siteFonts": [],
+    "uniqCompNum": 21,
+    "versionPublish": "4.11.6"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            }
+          },
+          "_name": "header2",
+          "_customHTML": "<section group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n         'mbr-fullscreen': fullScreen,\n         'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\" checked>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/mbr-1920x1280.jpg\" parallax selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#073B4C\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container align-center\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"mbr-white col-md-10\">\n                <h1 class=\"mbr-section-title mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">Apakah penyakit anda telah sembuh, setelah menjalani berbagai pengobatan baik medis maupun non medis?</h1>\n                <h3 class=\"mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">\n                    Beautiful mobile websites\n                </h3>\n                <p class=\"mbr-text pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Jika jawabannya TIDAK, maka kami menawarkan terapi gratis* untuk anda. Banyak pasien yang telah sembuh, menggunakan metode terapi kami. Jadi insyaallah metode terapi kami akan berhasil pada anda juga.<br></p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-secondary\" href=\"https://wa.me/6285276456789\" data-app-placeholder=\"Type Text\"><span class=\"socicon socicon-whatsapp mbr-iconfont mbr-iconfont-btn\"></span>KONSULTASI SEKARANG</a></div>\n            </div>\n        </div>\n    </div>\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
+          "_cid": "rLkyH2PKZ5",
+          "_anchor": "header2-0",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "P": {
+              "color": "#767676"
+            }
+          },
+          "_name": "header16",
+          "_customHTML": "<section class=\"header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"4\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background4.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#efefef\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"col-md-10 align-center\">\n                <h1 class=\"mbr-section-title mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                    FULL WIDTH INTRO\n                </h1>\n                <h3 class=\"mbr-section-subtitle mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">\n                    Beautiful mobile websites\n                </h3>\n                <p class=\"mbr-text pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Ingat saat terakhir kali Anda mengalami kesulitan mencari pengobatan yang tepat atas penyakit anda ataupun keluarga anda? Sementara biaya pengobatan, entah mengapa juga terlampau mahal. Kalaupun ada BPJS, mungkin anda juga merasa kurang memuaskan pelayanan pengobatannya.\n<br><br>TerapiGratis.com tidak ingin anda mengalaminya lagi. Terapi Gratis ini, memungkinkan anda berobat tanpa biaya sama sekali. Metode terapi yang digunakan juga telah terbukti biidznillah (dengan ijin Allah) menyembuhkan hampir semua penyakit yang diderita pasien, tidak hanya di Indonesia, bahkan pasien di Malaysia, Belanda, negara-negara Asia dan Eropa lainnya.&nbsp;</p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-black-outline\" href=\"https://wa.me/6285276456789\" data-app-placeholder=\"Type Text\"><span class=\"socicon socicon-whatsapp mbr-iconfont mbr-iconfont-btn\"></span>KONSULTASI SEKARANG</a></div>\n            </div>\n        </div>\n    </div>\n\n</section>",
+          "_cid": "rLkEQx15nq",
+          "_anchor": "header16-4",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "h3": {
+              "text-align": "center",
+              "font-weight": "300"
+            },
+            ".wrap": {
+              "width": "150px",
+              "height": "150px",
+              "margin": "0 auto"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#ffffff"
+            },
+            ".card": {
+              "-webkit-flex-basis": "100%",
+              "flex-basis": "100%",
+              "word-wrap": "break-word"
+            },
+            "ellipse": {
+              "stroke": "rgba(206, 206, 206, 0.4)"
+            },
+            "path": {
+              "stroke": "@progressColor"
+            },
+            "@media (max-width: 991px) and (min-width: 768px)": {
+              ".card": {
+                "-webkit-flex-basis": "33%",
+                "flex-basis": "33%"
+              }
+            },
+            "H4": {
+              "color": "#ffffff"
+            },
+            "P": {
+              "color": "#ffffff"
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "progress-bars3",
+          "_customHTML": "<section class=\"progress-bars3\" group=\"Progress\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" plugins=\"as-pie-progress\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) --> \n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n       \n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"color\" title=\"Progress Color\" name=\"progressColor\" value=\"#149dcc\">\n\n        <select title=\"Progress count\" name=\"progressCount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\" selected>6</option>\n        </select>\n        <input type=\"range\" inline title=\"Progress 1\" name=\"progress1\" min=\"0\" max=\"100\" step=\"1\" value=\"90\">\n        <input type=\"range\" inline title=\"Progress 2\" name=\"progress2\" min=\"0\" max=\"100\" step=\"1\" value=\"91\" condition=\"progressCount>1\">\n        <input type=\"range\" inline title=\"Progress 3\" name=\"progress3\" min=\"0\" max=\"100\" step=\"1\" value=\"98\" condition=\"progressCount>2\">\n        <input type=\"range\" inline title=\"Progress 4\" name=\"progress4\" min=\"0\" max=\"100\" step=\"1\" value=\"96\" condition=\"progressCount>3\">\n        <input type=\"range\" inline title=\"Progress 5\" name=\"progress5\" min=\"0\" max=\"100\" step=\"1\" value=\"93\" condition=\"progressCount>4\">\n        <input type=\"range\" inline title=\"Progress 6\" name=\"progress6\" min=\"0\" max=\"100\" step=\"1\" value=\"94\" condition=\"progressCount>5\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#232323\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    \n    <div class=\"container\">\n        <h2 class=\"mbr-section-title pb-3 align-center mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">Penyakit apa saja yang bisa disembuhkan?</h2>\n\n        <h3 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">Meski tampaknya anda telah mencoba semua cara di dunia untuk mengobati penyakit anda, faktanya tak satu pun yang berhasil.<br><br>\n<div>\n</div><div>Sekarang bayangkan jika saat ini anda sehat, dan bugar seperti orang lain. Untuk pertama kalinya dalam hidup, Anda merasakan apa yang disebut sebagai “nikmatnya sehat”. Dan anda bisa menikmati itu dengan melakukan terapi bersama kami karena setiap penyakit ada obatnya. Jadi anda tidak perlu khawatir.</div><br><div>\n</div><div>\n</div><div>Disebutkan dalam hadits shahih riwayat Imam Bukhari, bahwa Rasulullah shallallahu ‘alaihi wa sallam bersabda:\n</div><div>مَا أَنْزَلَ اللهُ دَاءً إِلَّا أَنْزَلَ لَهُ شِفَاءً\n</div><div>“Tidaklah Allah menurunkan penyakit kecuali Dia juga menurunkan penawarnya.” (HR Bukhari).</div></h3>\n    \n        <div class=\"media-container-row pt-5 mt-2\">\n            <div class=\"card p-3 align-center\">\n                <div class=\"wrap\">\n                    <div class=\"pie_progress progress1\" role=\"progressbar\" data-goal=\"{{progress1}}\">\n                        <p class=\"pie_progress__number mbr-fonts-style\" mbr-theme-style=\"display-5\"></p>\n                    </div>\n                </div> \n                <div class=\"mbr-crt-title pt-3\">\n                    <h4 class=\"card-title py-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">Stroke</h4>\n                </div>                 \n            </div>\n\n            <div class=\"card p-3 align-center\" mbr-if=\"progressCount>1\">\n                <div class=\"wrap\">\n                    <div class=\"pie_progress progress2\" role=\"progressbar\" data-goal=\"{{progress2}}\">\n                        <p class=\"pie_progress__number mbr-fonts-style\" mbr-theme-style=\"display-5\">91%</p>\n                    </div>\n                </div> \n                <div class=\"mbr-crt-title pt-3\">\n                    <h4 class=\"card-title py-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">Benjolan Payudara</h4>\n                </div>                 \n            </div>\n\n            <div class=\"card p-3 align-center\" mbr-if=\"progressCount>2\">\n                <div class=\"wrap\">\n                    <div class=\"pie_progress progress3\" role=\"progressbar\" data-goal=\"{{progress3}}\">\n                        <p class=\"pie_progress__number mbr-fonts-style\" mbr-theme-style=\"display-5\"></p>\n                    </div>\n                </div> \n                <div class=\"mbr-crt-title pt-3\">\n                    <h4 class=\"card-title py-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">Asma</h4>\n                </div>                 \n            </div>\n\n            <div class=\"card p-3 align-center\" mbr-if=\"progressCount>3\">\n                <div class=\"wrap\">\n                    <div class=\"pie_progress progress4\" role=\"progressbar\" data-goal=\"{{progress4}}\">\n                        <p class=\"pie_progress__number mbr-fonts-style\" mbr-theme-style=\"display-5\"></p>\n                    </div>\n                </div> \n                <div class=\"mbr-crt-title pt-3\">\n                    <h4 class=\"card-title py-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">\n                        Syaraf Kejepit</h4>\n                </div>                 \n            </div>\n\n            <div class=\"card p-3 align-center\" mbr-if=\"progressCount>4\">\n                <div class=\"wrap\">\n                    <div class=\"pie_progress progress5\" role=\"progressbar\" data-goal=\"{{progress5}}\">\n                        <p class=\"pie_progress__number mbr-fonts-style\" mbr-theme-style=\"display-5\"></p>\n                    </div>\n                </div> \n                <div class=\"mbr-crt-title pt-3\">\n                    <h4 class=\"card-title py-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">Jantung</h4>\n                </div>                 \n            </div>\n\n            <div class=\"card p-3 align-center\" mbr-if=\"progressCount>5\">\n                <div class=\"wrap\">\n                    <div class=\"pie_progress progress6\" role=\"progressbar\" data-goal=\"{{progress6}}\">\n                        <p class=\"pie_progress__number mbr-fonts-style\" mbr-theme-style=\"display-5\"></p>\n                    </div>\n                </div> \n                <div class=\"mbr-crt-title pt-3\">\n                    <h4 class=\"card-title py-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">\n                        Semua Penyakit Lainnya</h4>\n                </div>                 \n            </div>\n        </div>\n</div></section>",
+          "_cid": "rLkRYPiXb7",
+          "_anchor": "progress-bars3-8",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-section-subtitle": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content4",
+          "_customHTML": "<section class=\"mbr-section content4\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"title col-12 col-md-8\">\n                <h2 mbr-if=\"showTitle\" class=\"align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\">Bagaimana metode pengobatannya?</h2>\n                <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style\" mbr-theme-style=\"display-5\">Terapi Gratis menggunakan metode terapi yang qurani, sesuai syariat Islam, dan jauh dari apa yang disebut sebagai magic, sihir, ataupun ilmu perdukunan lainnya. Metode terapi ini juga tidak menggunakan tenaga dalam, obat-obatan, peralatan, operasi, apalagi jimat.\n<br><br><div>Metode terapi kami adalah dengan cara memperbaiki struktur tubuh yang mengalami penyimpangan terutama pada rangka manusia dan untuk beberapa kasus khusus (bilamana diperlukan) juga dikombinasikan dengan metode ruqyah syariyyah.</div><br><div>\n</div><div>Metode pengobatan kami tentu masih terhitung ‘ilmu baru’ jika dibandingkan chiropractic, shiatsu, yumeiho (beberapa nama besar terapi berbasis tulang belakang). Hanya saja, temuan yang sudah diperoleh, sudah menunjukkan hasil signifikan pada beberapa kasus. </div><br><div>Metode terapi kami juga tidak memusuhi aneka seni pengobatan tradisional yang lain. Kami hadir sebagai khazanah yang melengkapi aneka seni terapi kesehatan di dunia.</div><br><div>\n</div><div>\n</div><div>Dari Abud Darda’, ia berkata bahwa Rasulullah shallallahu ‘alaihi wa sallam bersabda,\n</div><div>\n</div><div>إِنَّ اللَّهَ أَنْزَلَ الدَّاءَ وَالدَّوَاءَ وَجَعَلَ لِكُلِّ دَاءٍ دَوَاءً فَتَدَاوَوْا وَلاَ تَدَاوَوْا بِحَرَامٍ\n</div><div>\n</div><div>“Allah telah menurunkan penyakit dan juga obatnya. Allah menjadikan setiap penyakit ada obatnya. Maka berobatlah, namun jangan berobat dengan yang haram.” (HR. Abu Daud no. 3874. Sanad hadits ini dho’if kata Al Hafizh Abu Thohir).</div></h3>\n                <div class=\"mbr-section-btn align-center py-4\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-primary\" href=\"https://wa.me/6285276456789\" data-app-placeholder=\"Type Text\"><span class=\"socicon socicon-whatsapp mbr-iconfont mbr-iconfont-btn\"></span>KONSULTASI SEKARANG</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rLkVDNrr9a",
+          "_anchor": "content4-e",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-section-subtitle": {
+              "color": "#ffffff"
+            },
+            "H2": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "content4",
+          "_customHTML": "<section class=\"mbr-section content4\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#232323\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"title col-12 col-md-8\">\n                <h2 mbr-if=\"showTitle\" class=\"align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\">Berapa biaya terapinya?</h2>\n                <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style\" mbr-theme-style=\"display-5\">Jika ditanya berapa normalnya tarif terapi menggunakan metode ini, maka jawabannya adalah minimal Rp.250.000,- per sekali terapi.\n<div>\n</div><div>Tunggu Dulu.\n</div><div>\n</div><div>Terapi Gratis menawarkan terapi bebas biaya alias gratis bagi anda yang tidak mampu, sedangkan jika anda mampu maka silahkan anda membayar semampunya saja, karena kami hanya bermaksud menolong anda. \n</div><div>\n</div><div>Kami punya ilmu, dan kami tidak ingin ilmu ini sia-sia. Kami ingin menggunakan ilmu ini untuk bisa membantu banyak orang. \n</div><div>\n</div><div>Betapa sedih ketika kami mendengar orang harus dioperasi, maupun dibedah jantungnya padahal insyaallah kami ada ilmunya. Betapa sedih ketika kami mendengar orang harus dioperasi karena ada benjolan di payudaranya sementara kami ada ilmunya. Begitu pula dengan berbagai penyakit kronis maupun akut lainnya, sementara kami ada ilmunya, sungguh kami merasa berdosa bila tidak bisa menolong.\n</div></h3>\n                <div class=\"mbr-section-btn align-center py-4\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-primary\" href=\"https://wa.me/6285276456789\" data-app-placeholder=\"Type Text\"><span class=\"socicon socicon-whatsapp mbr-iconfont mbr-iconfont-btn\"></span>KONSULTASI SEKARANG</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rLl4L1AxSk",
+          "_anchor": "content4-g",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value",
+              "& when (@gradientBg)": {
+                "background": "linear-gradient(45deg, @bg-value, @color2)"
+              }
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@reverseContent)": {
+              ".media-container-row": {
+                "flex-direction": "row-reverse",
+                "-webkit-flex-direction": "row-reverse"
+              }
+            },
+            ".mbr-figure": {
+              "@media (min-width: 992px)": {
+                "padding-right": "4rem",
+                "& when (@reverseContent)": {
+                  "padding-right": "0",
+                  "padding-left": "4rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                "padding-bottom": "3rem"
+              }
+            },
+            ".mbr-text": {
+              "@media (max-width: 767px)": {
+                "text-align": "center"
+              }
+            }
+          },
+          "_name": "header3",
+          "_customHTML": "<section class=\"header3\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n    \n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"100\">\n        <input type=\"checkbox\" title=\"Media On Left/Right\" name=\"reverseContent\" checked>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background4.jpg\" selected parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#149dcc\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Gradient\" name=\"gradientBg\" condition=\"bg.type == 'color'\" checked>\n        <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#232323\" condition=\"gradientBg && bg.type == 'color'\">\n        \n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                <img src=\"@PROJECT_PATH@/assets/images/abukhoir-534x657.png\" alt=\"Mobirise\" title>\n            </div>\n\n            <div class=\"media-content\">\n                <h1 class=\"mbr-section-title mbr-white pb-3 mbr-fonts-style\" mbr-if=\"showTitle\" mbr-theme-style=\"display-1\">Tentang Saya</h1>\n                <h3 class=\"mbr-section-subtitle align-left mbr-white mbr-light pb-3 mbr-fonts-style\" mbr-if=\"showSubTitle\" mbr-theme-style=\"display-2\">\n                    Beautiful mobile websites\n                </h3>\n                <div class=\"mbr-section-text mbr-white pb-3 \">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-theme-style=\"display-5\">اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عِلْمٍ لَا يَنْفَعُ، وَمِنْ قَلْبٍ لَا يَخْشَعُ، وَمِنْ نَفْسٍ لَا تَشْبَعُ، وَمِنْ دُعَاءٍ لَا يُسْمَعُ \n<br>\n<br>“Ya Allah … aku berlindung kepada-Mu dari ilmu yang tidak bermanfaat, dari hati yang tidak khusyu’, dari jiwa yang tidak merasa puas, dan dari doa yang tidak didengar (tidak dikabulkan).” (HR. Abu Dawud no. 1548, An-Nasa’i no. 5536, dan Ibnu Majah no. 3837. Hadits ini shahih.)</p>\n                </div>\n                <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-primary\" href=\"https://wa.me/6285276456789\" data-app-placeholder=\"Type Text\"><span class=\"socicon socicon-whatsapp mbr-iconfont mbr-iconfont-btn\"></span>KONSULTASI SEKARANG</a></div>\n            </div>\n        </div>\n    </div>\n\n</section>",
+          "_cid": "rLl8Nx8M4t",
+          "_anchor": "header3-i",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            ".google-map": {
+              "height": "25rem",
+              "position": "relative",
+              "iframe": {
+                "height": "100%",
+                "width": "100%"
+              },
+              "[data-state-details]": {
+                "color": "#6b6763",
+                "font-family": "Montserrat",
+                "height": "1.5em",
+                "margin-top": "-0.75em",
+                "padding-left": "1.25rem",
+                "padding-right": "1.25rem",
+                "position": "absolute",
+                "text-align": "center",
+                "top": "50%",
+                "width": "100%"
+              },
+              "&[data-state]": {
+                "background": "#e9e5dc"
+              },
+              "&[data-state=\"loading\"]": {
+                "[data-state-details]": {
+                  "display": "none"
+                },
+                "&::after": {}
+              }
+            }
+          },
+          "_name": "map1",
+          "_customHTML": "<section class=\"map1\" group=\"Maps\">\n\n    <mbr-parameters>   \n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"map\" title=\"Map\" name=\"googleMap\" place-id=\"ChIJTbFLq0VJMjAR00ugzNOA4hw\" value=\"Kisaran Timur, Kisaran Naga, Kec. Kisaran Tim., Kabupaten Asahan, Sumatera Utara 21216\">   \n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"google-map\" mbr-map=\"googleMap\">\n    </div>\n</section>",
+          "_cid": "rLl9uX7CU6",
+          "_anchor": "map1-j",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            }
+          },
+          "_name": "footer6",
+          "_customHTML": "<section group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background5.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#2e2e2e\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\">\n                    © Copyright 2020 Terapi Gratis - All Rights Reserved\n                </p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rLlaeGkhX4",
+          "_anchor": "footer6-k",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footers",
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
